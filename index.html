@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Custom CSS (Link to style.css - you will create this file separately) -->
+    <!-- Custom CSS (Link to style.css) -->
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts - Inter for clean typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,7 +43,8 @@
         <nav class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center">
                 <!-- Logo/Brand Name -->
-                <img src="https://raw.githubusercontent.com/AYMANEFAKIHI/nanas-atelier-website/main/images/logo-nana.png" alt="Nana's Atelier Logo" class="h-16 w-16 rounded-full mr-3 object-cover">
+                <!-- Make sure to update this src with your actual logo URL -->
+                <img src="images/logo-nana.png" alt="Nana's Atelier Logo" class="h-16 w-16 rounded-full mr-3 object-cover">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-900">Nana's Atelier</h1>
                     <p class="text-sm text-gray-600">Timeless Logo Design & Digital Art</p>
@@ -91,6 +92,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Portfolio Item 1 -->
             <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                <!-- Update this src with your actual image URL -->
                 <img src="https://placehold.co/600x400/ececec/333333?text=Logo+Design+1" alt="Logo Design Example 1" class="w-full h-48 object-cover">
                 <div class="p-5">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Elegant Brand Mark</h3>
@@ -99,6 +101,7 @@
             </div>
             <!-- Portfolio Item 2 -->
             <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                <!-- Update this src with your actual image URL -->
                 <img src="https://placehold.co/600x400/ececec/333333?text=Digital+Art+1" alt="Digital Art Example 1" class="w-full h-48 object-cover">
                 <div class="p-5">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Portrait Art</h3>
@@ -107,6 +110,7 @@
             </div>
             <!-- Portfolio Item 3 -->
             <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                <!-- Update this src with your actual image URL -->
                 <img src="https://placehold.co/600x400/ececec/333333?text=Cover+Art+1" alt="Cover Art Example 1" class="w-full h-48 object-cover">
                 <div class="p-5">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Album Cover Design</h3>
@@ -115,6 +119,7 @@
             </div>
             <!-- Portfolio Item 4 -->
             <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group">
+                <!-- Update this src with your actual image URL -->
                 <img src="https://placehold.co/600x400/ececec/333333?text=Illustration+1" alt="Illustration Example 1" class="w-full h-48 object-cover">
                 <div class="p-5">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Editorial Illustration</h3>
@@ -123,6 +128,7 @@
             </div>
         </div>
         <div class="text-center mt-12">
+            <!-- Update this href with your actual Instagram URL -->
             <a href="YOUR_INSTAGRAM_URL_HERE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 shadow-lg transform hover:scale-105 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram mr-2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line></svg>
                 View Full Insta page
@@ -137,7 +143,8 @@
 
         <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl border border-amber-200">
             <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Place Your Order</h3>
-            <form id="orderForm" class="space-y-6">
+            <!-- ACTION ATTRIBUTE UPDATED WITH YOUR FORMSPREE ENDPOINT -->
+            <form id="orderForm" action="https://formspree.io/f/movwylwd" method="POST" class="space-y-6">
                 <!-- Full Name -->
                 <div>
                     <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
@@ -192,7 +199,8 @@
                     <label for="referenceImages" class="cursor-pointer bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-md inline-flex items-center transition-colors duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.49"></path></svg>
                         Attach file(s)
-                        <input type="file" id="referenceImages" name="referenceImages" multiple accept=".jpg,.png,.pdf" max="5" class="hidden">
+                        <!-- name attribute is crucial for Formspree to recognize the field -->
+                        <input type="file" id="referenceImages" name="reference_images[]" multiple accept=".jpg,.png,.pdf" max="5" class="hidden">
                     </label>
                     <p class="mt-1 text-sm text-gray-500" id="referenceFileNames">Allowed: JPG, PNG, PDF, up to 5 files.</p>
                 </div>
@@ -215,7 +223,8 @@
                     <label for="paymentReceipt" class="cursor-pointer bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2 px-4 rounded-md inline-flex items-center transition-colors duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" x2="12" y1="3" y2="15"></line></svg>
                         Upload payment proof
-                        <input type="file" id="paymentReceipt" name="paymentReceipt" required accept=".jpg,.png,.pdf" class="hidden">
+                        <!-- name attribute is crucial for Formspree to recognize the field -->
+                        <input type="file" id="paymentReceipt" name="payment_receipt" required accept=".jpg,.png,.pdf" class="hidden">
                     </label>
                     <p class="mt-1 text-sm text-gray-500" id="paymentReceiptFileName">JPG / PNG / PDF / Screenshot.</p>
                 </div>
@@ -235,10 +244,16 @@
                     </button>
                 </div>
 
-                <!-- Form Submission Message (success/error) -->
+                <!-- Formspree hidden fields for thank-you page/redirects (optional but good practice) -->
+                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" /> -->
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                <!-- IMPORTANT: Formspree usually handles success messages itself.
+                     We can keep the below div for other custom messages if needed,
+                     but for basic success/error Formspree redirects/messages are default. -->
                 <div id="formMessage" class="hidden p-4 mt-6 rounded-md text-center text-white" role="alert"></div>
 
-                <!-- Auto-Response Email & Privacy Notice -->
+                <!-- Auto-Response Email & Privacy Notice (now just static text, Formspree handles email auto-response) -->
                 <div class="mt-12 text-center text-gray-600">
                     <p class="text-lg font-medium mb-4">Thank you for your order, <span id="clientNamePlaceholder" class="font-bold">[Client Name]</span>!</p>
                     <p class="text-sm italic mb-6">You’ll receive payment instructions within the next few hours. — Nana’s Atelier</p>
@@ -257,12 +272,14 @@
     <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-900 text-white text-center">
         <h2 class="text-3xl font-bold mb-8">Follow Me</h2>
         <div class="flex justify-center space-x-6">
+            <!-- Update this href with your actual Instagram URL -->
             <a href="YOUR_INSTAGRAM_URL_HERE" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-pink-500 transition-colors duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line></svg>
                 <span class="block text-sm mt-1">Instagram</span>
             </a>
+            <!-- Update this href with your actual WhatsApp number -->
             <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-green-500 transition-colors duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M16.75 3.031c-.81-.25-1.7-.393-2.618-.393C7.94 2.638 3.55 7.03 3.55 12.434c0 1.96.536 3.868 1.487 5.57l-.995 3.633 3.73-1.025a10.874 10.874 0 0 0 5.257 1.438h.001c5.394 0 9.784-4.392 9.784-9.786 0-2.58-.99-4.96-2.62-6.75Zm-6.526 15.353-.105-.06a8.835 8.835 0 0 1-4.22-1.157l-.248-.146-.2-.01-.78.214 1.954-7.14a8.874 8.874 0 0 1 5.405-1.928h.001a7.712 7.712 0 0 1 7.713 7.713c-.001 2.155-.89 4.14-2.385 5.568-.094.093-.19.18-.287.265-.133.116-.27.228-.41.336-.08.058-.163.113-.247.167-.282.18-.57.348-.865.503-.09.047-.18.093-.27.137-.42.203-.847.39-1.28.56-.057.022-.113.04-.17.06-.328.125-.66.242-.996.348-.15.048-.3.093-.45.136-.2.057-.4.11-.603.158-.088.02-.176.04-.265.058-.06.012-.12.02-.18.03ZM9.852 7.37c-.365-.895.068-1.554.214-1.637.147-.085.31-.09.43-.09.083 0 .193.003.27.006.188.012.395.038.618.577.294.707.97 2.378 1.053 2.548.08.17.14.354.04.55-.1.2-.295.327-.492.42-.164.08-.344.132-.524.17-.18.038-.363.06-.55.08-.22.024-.45.024-.68-.002-.23-.024-.46-.07-.68-.11-.168-.04-.33-.086-.49-.138-.16-.05-.31-.11-.45-.17-.23-.1-.45-.22-.64-.37-.18-.15-.34-.33-.49-.52-.15-.19-.28-.4-.4-.63-.12-.23-.22-.48-.3-.73-.08-.25-.13-.5-.16-.76Zm-.99 8.217c.23.232.49.44.78.63.29.19.6.357.92.51.32.15.65.28 1.0.387.35.108.7.195 1.06.26.47.085.947.13 1.42.13.29 0 .58-.02.87-.04.29-.02.58-.06.86-.09.11-.01.21-.02.32-.04.28-.03.56-.07.84-.13.27-.06.54-.12.79-.2.25-.08.49-.17.72-.27.23-.1.45-.22.65-.35.2-.13.39-.28.57-.44.18-.16.34-.33.49-.52.15-.19.28-.4.4-.63.12-.23.22-.48-.3-.73.08-.25.13-.5.16-.76-.03.26-.04.52-.02.78s-.05-.52-.1-.78c-.05-.26-.11-.5-.18-.75-.07-.25-.16-.48-.26-.7-.1-.22-.22-.43-.36-.63-.14-.2-.3-.39-.47-.56-.17-.17-.36-.32-.56-.47-.2-.15-.42-.28-.65-.4-.23-.12-.48-.23-.74-.31-.26-.08-.53-.14-.8-.18-.28-.04-.56-.07-.85-.07-.29 0-.58.01-.87.03-.29.02-.58.05-.87.09-.11.01-.21.02-.32.04-.28.03-.56.07-.84.13-.27.06-.54.12-.79.2-.25.08-.49.17-.72.27-.23.1-.45.22-.65.35-.2.13-.39.28-.57.44-.18.16-.34.33-.49.52-.15.19-.28.4-.4.63-.12.23-.22-.48-.3-.73-.08-.25-.13-.5-.16-.76-.03.26-.04.52-.02.78.02.26.05.52.1.78.05.25.11.5.18.75.07.25.16.48.26.7.1.22.22.43.36.63Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M16.75 3.031c-.81-.25-1.7-.393-2.618-.393C7.94 2.638 3.55 7.03 3.55 12.434c0 1.96.536 3.868 1.487 5.57l-.995 3.633 3.73-1.025a10.874 10.874 0 0 0 5.257 1.438h.001c5.394 0 9.784-4.392 9.784-9.786 0-2.58-.99-4.96-2.62-6.75Zm-6.526 15.353-.105-.06a8.835 8.835 0 0 1-4.22-1.157l-.248-.146-.2-.01-.78.214 1.954-7.14a8.874 8.874 0 0 1 5.405-1.928h.001a7.712 7.712 0 0 1 7.713 7.713c-.001 2.155-.89 4.14-2.385 5.568-.094.093-.19.18-.287.265-.133.116-.27.228-.41.336-.08.058-.163.113-.247.167-.282.18-.57.348-.865.503-.09.047-.18.093-.27.137-.42.203-.847.39-1.28.56-.057.022-.113.04-.17.06-.328.125-.66.242-.996.348-.15.048-.3.093-.45.136-.2.057-.4.11-.603.158-.088.02-.176.04-.265.058-.06.012-.12.02-.18.03ZM9.852 7.37c-.365-.895.068-1.554.214-1.637.147-.085.31-.09.43-.09.083 0 .193.003.27.006.188.012.395.038.618.577.294.707.97 2.378 1.053 2.548.08.17.14.354.04.55-.1.2-.295.327-.492.42-.164.08-.344.132-.524.17-.18.038-.363.06-.55.08-.22.024-.45.024-.68-.002-.23-.024-.46-.07-.68-.11-.168-.04-.33-.086-.49-.138-.16-.05-.31-.11-.45-.17-.23-.1-.45-.22-.64-.37-.18-.15-.34-.33-.49-.52-.15-.19-.28-.4-.4-.63-.12-.23-.22-.48-.3-.73-.08-.25-.13-.5-.16-.76Zm-.99 8.217c.23.232.49.44.78.63.29.19.6.357.92.51.32.15.65.28 1.0.387.35.108.7.195 1.06.26.47.085.947.13 1.42.13.29 0 .58-.02.87-.04.29-.02.58-.06.86-.09.11-.01.21-.02.32-.04.28-.03.56-.07.84-.13.27-.06.54-.12.79-.2.25-.08.49-.17.72-.27.23-.1.45-.22.65-.35.2-.13.39-.28.57-.44.18-.16.34-.33.49-.52.15-.19.28-.4.4-.63.12-.23.22-.48-.3-.73.08-.25.13-.5.16-.76-.03.26-.04.52-.02.78s-.05-.52-.1-.78c-.05-.26-.11-.5-.18-.75-.07-.25-.16-.48-.26-.7-.1-.22-.22-.43-.36-.63-.14-.2-.3-.39-.47-.56-.17-.17-.36-.32-.56-.47-.2-.15-.42-.28-.65-.4-.23-.12-.48-.23-.74-.31-.26-.08-.53-.14-.8-.18-.28-.04-.56-.07-.85-.07-.29 0-.58.01-.87.03-.29.02-.58.05-.87.09-.11.01-.21.02-.32.04-.28.03-.56.07-.84.13-.27.06-.54.12-.79.2-.25.08-.49.17-.72.27-.23.1-.45.22-.65.35-.2.13-.39.28-.57.44-.18.16-.34.33-.49.52-.15.19-.28.4-.4.63-.12.23-.22-.48-.3-.73-.08-.25-.13-.5-.16-.76-.03.26-.04.52-.02.78.02.26.05.52.1.78.05.25.11.5.18.75.07.25.16.48.26.7.1.22.22.43.36.63Z"></path></svg>
                 <span class="block text-sm mt-1">WhatsApp Business</span>
             </a>
         </div>
@@ -271,6 +288,7 @@
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Update this email address -->
             <p class="mb-2">Contact: <a href="mailto:your.email@example.com" class="hover:underline">your.email@example.com</a></p>
             <p>&copy; <span id="currentYear"></span> Nana's Atelier. All rights reserved.</p>
             <p>Designed & Created by Nana's Atelier.</p>
