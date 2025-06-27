@@ -1,0 +1,25 @@
+/* style.css */
+
+/* You can add any additional custom CSS here that isn't easily handled by Tailwind,
+   or if you want to override Tailwind defaults. */
+
+/* Example: Basic hover effect for main navigation links */
+/* This is already handled by Tailwind classes in HTML, but demonstrates how you'd add custom styles */
+.main-nav-link:hover {
+    text-decoration: underline;
+}
+
+/* More specific styles or component-level styles can go here */
+/* For instance, if you want a very custom button style not achievable with Tailwind */
+/*
+.custom-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.custom-button:hover {
+    background-color: #e5533d;
+}
+*/
